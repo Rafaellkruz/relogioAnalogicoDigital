@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.relogio-analogico {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border: 8px solid #333;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.ponteiro {
+  position: absolute;
+  width: 50%;
+  height: 0px;
+  background: #333;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0% 50%;
+  transform: rotate(90deg);
+  transition: all 0.05s ease-in-out;
+  rotate: 269deg;
+}
+
+.hora {
+  height: 8px;
+  background: #000;
+  width: 70px;
+  border-radius: 5px;
+}
+
+.minuto {
+  height: 4px;
+  background: blue;
+  border-radius: 5px;
+  width: 100px;
+
+}
+
+.segundo {
+  height: 2px;
+  background: rgb(255, 0, 0);
+  border-radius: 5px;
+  width: 100px;
+
+}
+
+.centro {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #2c5ada;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hora-marcador {
+  position: absolute;
+  width: 20%;
+  height: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transform-origin: 100%;
+  top: 115px;
+  left: 100px;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.relogio-digital {
+  font-size: 24px;
+  font-weight: bold;
+}
